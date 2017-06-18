@@ -1,5 +1,9 @@
 [
     {
+        "name": "Form with POST",
+        "url": "/form"
+    },
+    {
         "name": "Load data from json file",
         "url": "/json"
     },

@@ -12,5 +12,12 @@
         "content": "<ul><li>open example code on #routes/index.js/routes for 'json_detail'</li><li>it's define an 'content' value example that find a data from json</li>",
         "url_implementation": "/json_detail",
         "title_implementation": "data on this page get from #models/content.json"
+    },
+    {
+        "id": "post",
+        "title": "How to using POST",
+        "content": "<ul><li>open example code on #routes/form.js/routes for '/'</li><li>there's two routes for '/', it use 'get' and 'post'</li><li>see the different on how the routes define data and the view show the data from the POST submit data</li>",
+        "url_implementation": "/form",
+        "title_implementation": "check on #routes/form.js to see the code"
     }
 ]
