@@ -13,6 +13,6 @@
     },
     {
         "name": "Connect MongoDB",
-        "url": "/mongo/connect"
+        "url": "/mongo"
     }
 ]

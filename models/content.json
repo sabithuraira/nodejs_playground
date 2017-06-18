@@ -19,5 +19,12 @@
         "content": "<ul><li>open example code on #routes/form.js/routes for '/'</li><li>there's two routes for '/', it use 'get' and 'post'</li><li>see the different on how the routes define data and the view show the data from the POST submit data</li>",
         "url_implementation": "/form",
         "title_implementation": "check on #routes/form.js to see the code"
+    },
+    {
+        "id": "mongoconnect",
+        "title": "How to connect mongodb using mongoose",
+        "content": "<ul><li>Download mongodb</li><li>extract your download file and aim your terminal cursor to the mongodb extract file directory 'cd your_mongo_file/bin'</li><li>insert this command to your terminal './mongod'</li><li>for mac, you need to insert some commands to create 'data/db' directory => 'mkdir -p /data/db', 'sudo chmod 0755 /data/db', and 'sudo chown $USER /data/db'</li>",
+        "url_implementation": "/mongo",
+        "title_implementation": "check on #routes/form.js to see the code"
     }
 ]

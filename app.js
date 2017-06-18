@@ -5,12 +5,22 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('hbs');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var form = require('./routes/form');
-var users = require('./routes/users');
+var mongo = require('./routes/mongo');
 
 var app = express();
+
+mongoose.Promise = require('bluebird');
+mongoose.connect('mongodb://localhost/playground');
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('connected');
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,7 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/form', form);
-app.use('/users', users);
+app.use('/mongo', mongo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

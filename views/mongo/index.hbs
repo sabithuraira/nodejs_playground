@@ -1,0 +1,48 @@
+<div class="content-wrapper">
+  <section class="content-header">
+    <h1>Show List Data Using MongoDB</h1>
+  </section>
+
+  <section class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title">Customer</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+              <table class="table no-margin">
+                <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                  {{#each datas}}
+                      <tr>
+                          <td>{{name}}</td>
+                          <td>{{email}}</td>
+                          <td>{{address}}</td>
+                      </tr>
+                  {{/each}}
+                
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+</div>
