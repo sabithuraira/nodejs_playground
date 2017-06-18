@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Load data from json file",
+        "url": "/json"
+    },
+    {
+        "name": "Load spesific data from json file",
+        "url": "/json_detail"
+    },
+    {
+        "name": "Connect MongoDB",
+        "url": "/mongo/connect"
+    }
+]

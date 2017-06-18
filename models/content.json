@@ -1,0 +1,16 @@
+[
+    {
+        "id": "json",
+        "title": "How to load JSON file data",
+        "content": "<ul><li>make json file (you can see it on 'models' directory for content or menu file.)</li><li>define json file example: #routes/index/js - 'menus' value.</li><li>send the value on routes</li><li>use it on your view example: #views/index/index.hbs or #views/index/json.hbs</li>",
+        "url_implementation": "/",
+        "title_implementation": "data on dashboard page using json file from #models/menu.json"
+    },
+    {
+        "id": "json_detail",
+        "title": "How to load spesific JSON file data",
+        "content": "<ul><li>open example code on #routes/index.js/routes for 'json_detail'</li><li>it's define an 'content' value example that find a data from json</li>",
+        "url_implementation": "/json_detail",
+        "title_implementation": "data on this page get from #models/content.json"
+    }
+]
