@@ -21,6 +21,13 @@
         "title_implementation": "check on #routes/form.js to see the code"
     },
     {
+        "id": "csrf",
+        "title": "Form with CSRF",
+        "content": "<ul><li>install 'csurf' and 'express-session' from your NPM</li><li>on #app.js, add variable session and app.use(session...</li><li>on #routes/form.js define csrf configuration for the routes</li><li>see on routes 'form/csrf' to see how it works.</li>",
+        "url_implementation": "/form/csrf",
+        "title_implementation": "how to implement CSRF"
+    },
+    {
         "id": "mongoconnect",
         "title": "How to connect mongodb using mongoose",
         "content": "<ul><li>Download mongodb</li><li>extract your download file and aim your terminal cursor to the mongodb extract file directory 'cd your_mongo_file/bin'</li><li>insert this command to your terminal './mongod'</li><li>for mac, you need to insert some commands to create 'data/db' directory => 'mkdir -p /data/db', 'sudo chmod 0755 /data/db', and 'sudo chown $USER /data/db'</li>",

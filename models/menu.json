@@ -4,6 +4,10 @@
         "url": "/form"
     },
     {
+        "name": "Form with CSRF",
+        "url": "/form/csrf"
+    },
+    {
         "name": "Load data from json file",
         "url": "/json"
     },
