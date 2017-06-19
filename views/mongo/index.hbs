@@ -11,9 +11,7 @@
             <h3 class="box-title">Customer</h3>
 
             <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                <a class="btn btn-box-tool" href="/mongo/new"><i class="fa fa-plus"></i> Add New</a>
             </div>
           </div>
           <!-- /.box-header -->
@@ -25,6 +23,7 @@
                   <th>Name</th>
                   <th>Email</th>
                   <th>Address</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,6 +32,9 @@
                           <td>{{name}}</td>
                           <td>{{email}}</td>
                           <td>{{address}}</td>
+                          <td>
+                            <a class='btn btn-xs btn-default' href='/mongo/edit/{{_id}}'>Update</a>
+                          </td>
                       </tr>
                   {{/each}}
                 
