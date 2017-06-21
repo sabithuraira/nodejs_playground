@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost/playground');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  console.log('connected');
+  // console.log('connected');
 });
 
 // view engine setup

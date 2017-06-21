@@ -18,5 +18,13 @@
     {
         "name": "Connect MongoDB",
         "url": "/mongo"
+    },
+    {
+        "name": "Manage data mongoDB (index, edit, delete)",
+        "url": "/mongo"
+    },
+    {
+        "name": "Add data mongoDB",
+        "url": "/mongo/new"
     }
 ]

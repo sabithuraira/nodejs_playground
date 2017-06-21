@@ -1,5 +1,15 @@
 <div class="content-wrapper">
   <section class="content-header">
+      <div class="callout callout-info">
+          <h4>{{ content.title }}</h4>
+
+          <p>{{{ content.content }}}</p>
+          <p>Implementation Example: <a href="{{ content.url_implementation }}">Here</a></p>
+          <p>What's include on this implementation example: {{ content.title_implementation }}</p>
+      </div>
+  </section>
+
+  <section class="content-header">
     <h1>Show List Data Using MongoDB</h1>
   </section>
 
@@ -11,7 +21,7 @@
             <h3 class="box-title">Customer</h3>
 
             <div class="box-tools pull-right">
-                <a class="btn btn-box-tool" href="/mongo/new"><i class="fa fa-plus"></i> Add New</a>
+                <a class="btn btn-box-tool btn-default" href="/mongo/new"><i class="fa fa-plus"></i> Add New</a>
             </div>
           </div>
           <!-- /.box-header -->
@@ -34,10 +44,10 @@
                           <td>{{address}}</td>
                           <td>
                             <a class='btn btn-xs btn-default' href='/mongo/edit/{{_id}}'>Update</a>
+                            <a class="btn btn-xs btn-default" onclick="return confirm('Are you sure want to delete this data');" href="/mongo/delete/{{_id}}"><i class="fa fa-remove"></i> Destroy</a>
                           </td>
                       </tr>
                   {{/each}}
-                
                 </tbody>
               </table>
             </div>

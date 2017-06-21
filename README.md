@@ -7,6 +7,7 @@ What's inclue:
 - load data from json file
 - using form, csrf
 - connect mongodb
+- CRUD operation mongodb with mongoose
 
 
 will update for more sample..

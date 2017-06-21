@@ -9,6 +9,7 @@
                 </div>
             </div>
             <form role="form" method='POST'>
+                <input type="hidden" id="_csrf" name="_csrf" value={{csrfToken}}>
                 <div class="box-body">
                     <input type="hidden" name="_method" value="PUT">
                     <div class="form-group">

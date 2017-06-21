@@ -33,5 +33,19 @@
         "content": "<ul><li>Download mongodb</li><li>extract your download file and aim your terminal cursor to the mongodb extract file directory 'cd your_mongo_file/bin'</li><li>insert this command to your terminal './mongod'</li><li>for mac, you need to insert some commands to create 'data/db' directory => 'mkdir -p /data/db', 'sudo chmod 0755 /data/db', and 'sudo chown $USER /data/db'</li>",
         "url_implementation": "/mongo",
         "title_implementation": "check on #routes/form.js to see the code"
+    },
+    {
+        "id": "mongoindex",
+        "title": "Manage data (show list, edit, delete) with mongodb",
+        "content": "<ul><li>This page will show you how to load data, edit and delete data</li><li>load data: all routes from #routes/mongo.js file. Call customer data with 'find' instructions.</li><li>edit data: it will get from routes 'edit/:id', id is parameter for data that you want to update. You can get id value from 'list or index' page, and get it in each data on the list</li><li>delete data: will run on routes 'delete/:id', params same with implementation on 'edit' routes</li>",
+        "url_implementation": "/mongo",
+        "title_implementation": "create CRUD mongodb"
+    },
+    {
+        "id": "mongoadd",
+        "title": "Add data to mongodb",
+        "content": "<ul><li>you can get it on routes 'mongo/add'</li>",
+        "url_implementation": "/mongo/new",
+        "title_implementation": "create CRUD mongodb"
     }
 ]
